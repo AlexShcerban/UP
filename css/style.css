@@ -1,0 +1,189 @@
+.index_block_big{
+    height: 347px;
+    width: 791px;
+    margin-left: 39px;
+    margin-top: 93px;
+    background: #2D2A2A;
+    position: relative;
+}
+body{
+    background: #1B1A1C;
+    color: aliceblue;
+}
+a{
+    color: aliceblue;
+}
+main{
+    width: 58%;
+    margin-left: 311px;
+    margin-top: 63px;
+    background: #000000;
+}
+.button{
+    width: 218px;
+    height: 37px;
+    background: #961FCE;
+    text-align: center;
+    color: aliceblue;
+}
+#index_block_big_2{
+    margin-top: 147px;
+}
+
+/* Главная */
+/* первый блок */
+#index_photo_1{
+    left: 378px;
+    top: 28px;
+    position: absolute;
+}
+.index_photo_1_1{
+    width: 387px;
+    height: 292px;
+    /*position: absolute;*/
+}
+#index_button_rospis{
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+    margin-top: 13px;
+}
+#index_text_1{
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+    text-align: center;
+}
+#index_text_2{
+    margin-top: 16px;
+    width: 314px;
+    height: 44px;
+    background: #1A1717;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+}
+#index_info_1{
+    margin-top: 110px;
+    position: absolute;
+    width: 380px;
+}
+/* второй блок */
+#index_info_2{
+    margin-left: 413px;
+    margin-top: 110px;
+    position: absolute;
+    width: 380px;
+}
+#index_text_3{
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+    text-align: center;
+}
+#index_text_4{
+    margin-top: 16px;
+    width: 230px;
+    height: 44px;
+    background: #1A1717;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+}
+#index_button_map{
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+    margin-top: 13px;
+}
+#index_photo_2{
+    left: 28px;
+    top: 28px;
+    position: absolute;
+}
+/* Новости */
+#index_news_text{
+    margin-top: 234px;
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+}
+.index_block_news{
+    width: 83%;
+    height: 262px;
+    margin-left: 9%;
+    margin-bottom: 94px;
+    background: #2D2A2A;
+    position: relative;
+}
+.index_photo_news{
+    left: 33px;
+    top: 33px;
+    position: absolute;
+    width: 196px;
+    height: 196px;
+}
+.index_news_text_main{
+    width: 50%;
+    left: 40%;
+    top: 71px;
+    position: absolute;
+}
+.index_news_h1{
+    position: absolute;
+    top: 33px;
+    left: 65%;
+    transform: translate(-50%, 0%);
+}
+
+/* Расписание */
+#time_button_1{
+    width: 374px;
+    height: 117px;
+    margin-top: 100px;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    background: linear-gradient(rgb(253, 0, 219), #961FCE);
+}
+#time_table{
+    margin-top: 123px;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    width: 85%;
+    background-color: #f7eded;
+    border-color: aliceblue;
+    border: 20px;
+}
+#time_table td{
+    background-color: #2D2A2A;
+    height: 80px;
+    width: 120px;
+    text-align: center;
+}
+.time_table_button{
+    width: 150px;
+    height: 25px;
+    margin-left: 20px;
+}
+#time_form{
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    width: 85%;
+    height: 189px;
+    background-color: #2D2A2A;
+    margin-top: 62px;
+    margin-bottom: 200px;
+}
+.form_text{
+    height: 29px;
+    width: 182px;
+    margin-left: 9px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#time_form_button{
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+}
+#time_form_name{
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+    font-size: 115%;
+    text-align: center;
+    margin-top: 18px;
+}
