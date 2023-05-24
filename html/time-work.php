@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <?php include "header.php"; ?>
     <main>
         <div class = "button" id = "time_button_1">Купить билет</div>
         <table id = "time_table">
+            <caption>Расписание</caption>
             <?php
                 for ($i=0; $i < $count; $i++) { 
             ?>
@@ -30,12 +32,15 @@
         </table>
         <form action="..php/buy.php" method="get" id = "time_form">
             <div id = "time_form_name">Заказать экскурсию</div>
-            <label for = "time">Время</label><input type="text" name = "time" class = "form_text">
-            <label for = "human">Количество людей</label><input type="number" name = "human" class = "form_text">
-            <br>
-            <label for = "tema">Тема</label><input type="text" name = "tema" class = "form_text">
+            <div id = "time_form_field">
+                <label for = "time">Дата</label><input type="date" name = "time" class = "form_text">
+                <label for = "human">Количество людей</label><input type="number" name = "human" class = "form_text">
+                <br>
+                <label for = "tema">Тема</label><input type="text" name = "tema" class = "form_text">
+                <label for = "tema">Дополнительная информация</label><input type="text" name = "info" class = "form_text">
+            </div>
             <br><br>
-            <input type="submit" value="Отправить" class = "button" id = "time_form_button">
+            <input type="submit" value="Заказать" class = "button" id = "time_form_button">
         </form>
     </main>
 </body>

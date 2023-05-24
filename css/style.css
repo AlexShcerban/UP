@@ -16,7 +16,7 @@ a{
 main{
     width: 58%;
     margin-left: 311px;
-    margin-top: 63px;
+   /* margin-top: 63px;*/
     background: #000000;
 }
 .button{
@@ -26,9 +26,26 @@ main{
     text-align: center;
     color: aliceblue;
 }
+#header{
+    background-color: #141313;
+    width: 100%;
+    height: 63px;
+    margin-top: -4px;
+}
+.header_button{
+    margin-top: 25px;
+    margin-right: 100px;
+}
+.header_block{
+    margin-left: 250px;
+}
+#header_signUp{
+    margin-left: 250px;
+}
 #index_block_big_2{
     margin-top: 147px;
 }
+
 
 /* Главная */
 /* первый блок */
@@ -130,6 +147,29 @@ main{
     left: 65%;
     transform: translate(-50%, 0%);
 }
+#index_pn_pt{
+    position: absolute;
+    top: 110px;
+    left: 80%;
+    height: 115px;
+    width: 200;
+    background-color: #000000;
+    position: fixed;
+}
+#index_pn_pt_text{
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 15px;
+    height: 27px;
+    width: 144px;
+}
+#index_pn_pt_button{
+    width: 150px;
+    height: 30px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 15px;
+}
 
 /* Расписание */
 #time_button_1{
@@ -168,6 +208,7 @@ main{
     background-color: #2D2A2A;
     margin-top: 62px;
     margin-bottom: 200px;
+    text-align: right;
 }
 .form_text{
     height: 29px;
@@ -177,8 +218,9 @@ main{
     border-radius: 5px;
 }
 #time_form_button{
-    transform: translate(-50%, 0%);
-    margin-left: 50%;
+    transform: translate(50%, 0%);
+    margin-right: 50%;
+    margin-top: -10px;
 }
 #time_form_name{
     transform: translate(-50%, 0%);
@@ -186,4 +228,75 @@ main{
     font-size: 115%;
     text-align: center;
     margin-top: 18px;
+}
+#time_form_field{
+    margin-right: 0%;
+    width: 90%;
+    margin-top: 5px;
+}
+
+/* Каталог */
+#catalog{
+    margin-left: 61px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.catalog_unit{
+    height: 250px;
+    width: 224px;
+    margin-top: 73px;
+    margin-right: 38px;
+    background-color: #2D2A2A;
+    text-align: center;
+}
+.catalog_unit_photo{
+    width: 202px;
+    height: 202px;
+    margin-left: 11px;
+    margin-top: 11px;
+}
+#catalog_button{
+    width: 166px;
+    height: 43px;
+    left: 63%;
+    top: 170px;
+    position: absolute;
+}
+#catalog_count_text{
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+    margin-top: 66px;
+    text-align: center;
+    border-bottom: 2px solid #961FCE;
+}
+
+/* Экспонат */
+#exhibit_block{
+    margin-left: 5%;
+    margin-top: 25px;
+    width: 89%;
+    background-color: #2D2A2A;
+}
+#exhibit_photo{
+    width: 164px;
+    height: 164px;
+    margin-left: 24px;
+    margin-top: 24px;
+    float: left;
+    margin-right: 20px;
+}
+#exhibit_text_1{
+    width: 95%;
+    margin-left: 5%;
+    margin-top: 24px;
+}
+#exhibit_text_2{
+    width: 95%;
+    margin-left: 5%;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+#exhibit_button{
+    margin-left: 48px;
+    margin-top: 25px;
 }

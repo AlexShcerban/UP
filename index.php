@@ -1,5 +1,19 @@
 <?php
+// 1. тег main с самого верха и до самого низа
+// 2. можно ссылкой или лучше делать кнопки
+// 3. Стоит ли делать публичный доступ к проекту и не боятся, что его украдут
+// 4. Выравнивание по вертикали
+
 //может быть открытие нового отдела
+
+//Страница о нас******
+//Вход и регистрация
+//Новости***
+//Покупка билета
+//БД и php
+//Надпись новости на главной странице***
+//Создание новых экспонатов и экскурсий
+
     $time_work = "20.04 Экскурсия 'Самолеты ВОВ'";
     $photo = "photo1";
     $count = 3;
@@ -17,8 +31,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <a href="html/time-work.php">Расписание</a>
+    <div id = "header">
+        <div class = "header_block">
+            <a href="index.php" class = "header_button">Главная</a>
+            <a href="html/time-work.php" class = "header_button">Купить билет</a>
+            <a href="html/catalog.php" class = "header_button">Галерея</a>
+            <a href="html/aboutUs.html" class = "header_button">О музее</a>
+            <a href="index.php" class = "header_button" id = "header_signUp">Вход</a>
+        </div>
+    </div>
+
     <main>
+        <div id = "index_pn_pt">
+            <div id = "index_pn_pt_text">
+                ПН-ПТ 10:00-18:00 <br>
+                СБ-ВС выходной
+            </div>
+            <a href="html/time-work.php"><div class = "button" id = "index_pn_pt_button">Купить билет</div></a>
+        </div>
         <!-- Первый блок -->
         <div class = "index_block_big">
             <div id = "index_info_1">
