@@ -16,8 +16,9 @@ a{
 main{
     width: 58%;
     margin-left: 311px;
-   /* margin-top: 63px;*/
+    margin-top: 0px;
     background: #000000;
+    height: auto;
 }
 .button{
     width: 218px;
@@ -50,12 +51,12 @@ main{
 /* Главная */
 /* первый блок */
 #index_photo_1{
-    left: 378px;
+    left: 450px;
     top: 28px;
     position: absolute;
 }
 .index_photo_1_1{
-    width: 387px;
+    width: 292px;
     height: 292px;
     /*position: absolute;*/
 }
@@ -110,7 +111,7 @@ main{
     margin-top: 13px;
 }
 #index_photo_2{
-    left: 28px;
+    left: 50px;
     top: 28px;
     position: absolute;
 }
@@ -119,6 +120,7 @@ main{
     margin-top: 234px;
     transform: translate(-50%, 0%);
     margin-left: 50%;
+    text-align: center;
 }
 .index_block_news{
     width: 83%;
@@ -299,4 +301,119 @@ main{
 #exhibit_button{
     margin-left: 48px;
     margin-top: 25px;
+}
+
+/* О музее */
+#about_block_big{
+    width: 789px;
+    height: 381px;
+    margin-top: 58px;
+    margin-left: 37px;
+    background-color: #2D2A2A;
+    position: relative;
+}
+#about_block_map{
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    width: 428px;
+    height: 325px;
+    background-color: #1B1A1C;
+}
+#about_block_text{
+    position: absolute;
+    top: 62px;
+    left: 494px;
+    height: 241px;
+}
+#about_text{
+    margin-top: 163px;
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+    text-align: center;
+}
+.about_block_mini{
+    margin-bottom: 68px;
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+    width: 771px;
+    height: 293px;
+    position: relative;
+    background-color: #2D2A2A;
+}
+.about_text{
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+    text-align: center;
+}
+.about_block_photo{
+    width: 223px;
+    height: 223px;
+    top: 35px;
+    left: 23px;
+    position: absolute;
+}
+.about_block_text{
+    top: 35px;
+    left: 269px;
+    width: 478px;
+    height: 223px;
+    position: absolute;
+}
+#about_block_photo_2{
+    left: 516px;
+}
+#about_block_text_2{
+    left: 23px;
+}
+
+/* новости */
+#news_any_text{
+    margin-top: 181px;
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+    text-align: center;
+}
+#news_any{
+    margin-left: 127px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.news_any{
+    margin-right: 20px;
+    margin-bottom: 18px;
+    width: 237px;
+    height: 90px;
+    background: rgba(20, 19, 19, 0.47);
+    position: relative;
+}
+.news_any_photo{
+    width: 67px;
+    height: 67px;
+    top: 11px;
+    left: 11px;
+    position: absolute;
+}
+.news_any_text{
+    top: 31px;
+    left: 94px;
+    position: absolute;
+    height: 35px;
+    width: 121px;
+}
+
+/* Регистрация */
+.login_block{
+    background-color: #2D2A2A;
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+    width: 70%;
+    margin-top: 50px;
+    justify-content: center;
+}
+#logic_button{
+    margin-left: 147px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
