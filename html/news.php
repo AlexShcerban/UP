@@ -28,7 +28,7 @@
         <a href="../index.php"><div class = "button" id = "exhibit_button">Вернуться к новостям</div></a>
         <div id = "exhibit_block">
             <div id = "news_name_1"><?= $new[0][0] ?></div>
-            <img src="../img/<?= $new[0][2] ?>.png" alt="Музейный экспонат, <?= $new[0][0] ?>" id = "exhibit_photo">
+            <img src="../img/<?= $new[0][2] ?>" alt="Музейный экспонат, <?= $new[0][0] ?>" id = "exhibit_photo">
             <div id = "exhibit_text_2"><?= $new[0][3] ?></div>
 
             <!-- Дополнительные новости -->
@@ -38,7 +38,7 @@
                 for ($i=0; $i < $count; $i++) { ?>
                     <a href="news.php?id_news=<?= $news[$i][0] ?>">
                         <div class = "news_any">
-                            <img src="../img/<?= $news[$i][2] ?>.png" alt="Новости" class = "news_any_photo">
+                            <img src="../img/<?= $news[$i][2] ?>" alt="Новости" class = "news_any_photo">
                             <div class = "news_any_text"><?= $news[$i][1] ?></div>
                         </div>
                     </a>

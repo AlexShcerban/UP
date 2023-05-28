@@ -33,17 +33,17 @@
     <main>
         <div id = "catalog_count_text">Всего <?= count($exhibit) ?> экспонатов</div>
         <?php if($sotrudnik){ ?>
-            <a href="create.php"><div class = "button" id = "catalog_button">Добавить новый экспонат</div></a>
+            <a href="createpage.php"><div class = "button" id = "catalog_button">Добавить новый экспонат</div></a>
         <?php } ?>
         <div id = "catalog">
             <?php
             // Создание каталога
             for ($i=0; $i < count($exhibit); $i++) { 
             ?>
-                <a href = "exhibit.php?id_exhibit=<?= $exhibit[0][0] ?>">
+                <a href = "exhibit.php?id_exhibit=<?= $exhibit[$i][0] ?>">
                     <div class = "catalog_unit">
-                        <img src="../img/<?= $exhibit[0][2] ?>.png" alt="экспонат фото" class = "catalog_unit_photo">
-                        <?= $exhibit[0][1] ?>
+                        <img src="../img/<?= $exhibit[$i][2] ?>" alt="экспонат фото" class = "catalog_unit_photo">
+                        <?= $exhibit[$i][1] ?>
                     </div>
                 </a>
             <?php } ?>

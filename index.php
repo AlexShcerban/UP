@@ -1,17 +1,17 @@
 <?php
 
 // Покупка билета
-// Создание новой экскурсии
-// Создание нового экспоната
-// Создание новых новостей
-// 404
+// Нормальные фото сделать
 
-//Заменить ссылки на кнопки с JS ---
-//тег main с самого верха и до самого низа ***
-//Выравнивание по вертикали ***
+// тег main с самого верха и до самого низа ***
+// Выравнивание по вертикали ***
+
+// 404
+//Заменить ссылки на кнопки с JS
 //Ширина в процентах
 //Заголовки увеличить текст
 
+    session_start();
     require_once 'config/connect.php';
     $news = mysqli_query($connect, "SELECT `id`, `name`, `date`, `photo`, `description` FROM `news`");
     $news = mysqli_fetch_all($news);
@@ -20,6 +20,11 @@
 
     $event = mysqli_query($connect, "SELECT `name`, `date` FROM `time-work` WHERE `date`>$date");
     $event = mysqli_fetch_all($event);
+
+
+    $id = $_SESSION['id'];
+    $a = mysqli_query($connect, "SELECT `level` FROM `accaunt` WHERE `id`=$id");
+    $a = mysqli_fetch_all($a);
 
 ?>
 
@@ -99,11 +104,14 @@
             <!-- Новости -->
             <div id = "index_news_text">Новости</div>
             <?php
+                if($a[0][0] > 0){ ?>
+                    <a href="html/create-news.php" style = "margin-left: 70%;">Создание новой новости</a>
+                <?php }
                 for($i = 0; $i < count($news); $i++){
             ?>
             <a href="html/news.php?id_news=<?= $news[$i][0] ?>">
                 <div class = "index_block_news">
-                    <img class = "index_photo_news" src="img/<?= $news[$i][3] ?>.png" alt="Фото новости">
+                    <img class = "index_photo_news" src="img/<?= $news[$i][3] ?>" alt="Фото новости">
                     <div class = "index_news_h1"><?= $news[$i][1] ?> (<?= $news[$i][2] ?>)</div>
                     <div class = "index_news_text_main">
                         <?= $news[$i][4] ?>

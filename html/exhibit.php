@@ -23,7 +23,7 @@
     <main>
         <a href="catalog.php"><div class = "button" id = "exhibit_button">Вернуться к каталогу</div></a>
         <div id = "exhibit_block">
-            <img src="../img/<?= $exhibit[0][1] ?>.png" alt="музейный экспонат, <?= $exhibit[0][0] ?>" id = "exhibit_photo">
+            <img src="../img/<?= $exhibit[0][1] ?>" alt="музейный экспонат, <?= $exhibit[0][0] ?>" id = "exhibit_photo">
             <div id = "exhibit_text_1">
                 Название: <?= $exhibit[0][0] ?><br>
              <!--   Возраст: <?= $name ?><br> -->

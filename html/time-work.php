@@ -1,9 +1,15 @@
 <?php
+    session_start();
     require_once '../config/connect.php';
     $accaunts = mysqli_query($connect, "SELECT `name`, `date`, `price` FROM `time-work`");//получение данных
     $accaunts = mysqli_fetch_all($accaunts);//нормальный вид
 
     $date = date('Y-m-d');
+
+    $id = $_SESSION['id'];
+    $a = mysqli_query($connect, "SELECT `level` FROM `accaunt` WHERE `id`=$id");
+    $a = mysqli_fetch_all($a);
+
 ?>
 
 
@@ -35,23 +41,23 @@
             <?php }} ?>
         </table>
         <!-- Заказ экскурсии -->
-        <form action="..php/buy.php" method="get" id = "time_form">
-            <div id = "time_form_name">Заказать экскурсию</div>
-            <div id = "time_form_field">
-                <div>
-                    <label for = "time">Дата</label><input type="date" name = "time" class = "form_text">
-                    <br>
-                    <label for = "human">Количество людей</label><input type="number" name = "human" class = "form_text">
+        <?php if($a[0][0] > 0){ ?>
+            <form action="../php/createtime.php" method="post" id = "time_form">
+                <div id = "time_form_name">Заказать экскурсию</div>
+                <div id = "time_form_field">
+                    <div>
+                        <label for = "tema">Тема</label><input type="text" name = "tema" class = "form_text">
+                        <br>
+                        <label>Стоимость</label><input type="number" name = "price" step = "50" class = "form_text">
+                    </div>
+                    <div id = "time_form_field_1">
+                        <label for = "time">Дата</label><input type="date" name = "time" class = "form_text">
+                    </div>
                 </div>
-                <div id = "time_form_field_1">
-                    <label for = "tema">Тема</label><input type="text" name = "tema" class = "form_text">
-                    <br>
-                    <label for = "tema">Доп. информация</label><input type="text" name = "info" class = "form_text">
-                </div>
-            </div>
-            <br><br>
-            <input type="submit" value="Заказать" class = "button" id = "time_form_button">
-        </form>
+                <br><br>
+                <input type="submit" value="Заказать" class = "button" id = "time_form_button">
+            </form>
+        <?php } ?>
     </main>
 </body>
 </html>
