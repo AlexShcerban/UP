@@ -14,12 +14,11 @@
     <main>
         <div id = "about_block_big">
             <div id = "about_block_map">
-
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.1450354635613!2d83.75925208953711!3d53.340659900833465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dda4419cd241ff%3A0xfe801be2576c6446!2z0YPQuy4g0JrRgNGD0L_RgdC60L7QuSwgMTAzLCDQkdCw0YDQvdCw0YPQuywg0JDQu9GC0LDQudGB0LrQuNC5INC60YDQsNC5LCA2NTYwMzE!5e0!3m2!1sru!2sru!4v1685259904101!5m2!1sru!2sru" width="428" height="325" style="border:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div id = "about_block_text">
                 Название: <br>
                 Музей "ВОВ" <br><br><br>
-
                 Адрес: <br> г. Барнаул <br> ул. Крупская <br> дом 103
                 <br><br><br>
                 Время работы: <br> ПН-ПТ 10:00-18:00 <br> СБ-ВС выходной

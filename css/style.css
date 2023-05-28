@@ -12,6 +12,7 @@ body{
 }
 a{
     color: aliceblue;
+    text-decoration: none;
 }
 main{
     width: 58%;
@@ -142,11 +143,13 @@ main{
     left: 40%;
     top: 71px;
     position: absolute;
+    overflow: hidden;
+    height: 150px;
 }
 .index_news_h1{
     position: absolute;
     top: 33px;
-    left: 65%;
+    left: 61%;
     transform: translate(-50%, 0%);
 }
 #index_pn_pt{
@@ -233,8 +236,13 @@ main{
 }
 #time_form_field{
     margin-right: 0%;
-    width: 90%;
+    width: 95%;
     margin-top: 5px;
+}
+#time_form_field_1{
+    position: absolute;
+    right: 400px;
+    top: 25px;
 }
 
 /* Каталог */
@@ -374,6 +382,12 @@ main{
     margin-left: 50%;
     text-align: center;
 }
+#news_name_1{
+    margin-bottom: 10px;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+}
 #news_any{
     margin-left: 127px;
     margin-top: 14px;
@@ -416,4 +430,10 @@ main{
     margin-left: 147px;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+#login_exit{
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    margin-top: 50px;
+    margin-bottom: 50px;
 }

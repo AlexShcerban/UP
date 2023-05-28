@@ -1,28 +1,26 @@
 <?php
-//может быть открытие нового отдела в событиях
 
+// Покупка билета
+// Создание новой экскурсии
+// Создание нового экспоната
+// Создание новых новостей
+// 404
 
-//БД и php
-//регистрация и вход
-
-
-//Покупка билета ***
-//Создание новых экспонатов, экскурсий и новостей ---
-
-
-//Заменить ссылки на кнопки с JS ***
-//тег main с самого верха и до самого низа
+//Заменить ссылки на кнопки с JS ---
+//тег main с самого верха и до самого низа ***
 //Выравнивание по вертикали ***
 //Ширина в процентах
-//Рабочая карта
+//Заголовки увеличить текст
 
-//Дозагрузка экспонатов и новостей
+    require_once 'config/connect.php';
+    $news = mysqli_query($connect, "SELECT `id`, `name`, `date`, `photo`, `description` FROM `news`");
+    $news = mysqli_fetch_all($news);
 
-    $time_work = "20.04 Экскурсия 'Самолеты ВОВ'";
-    $photo = "photo1";
-    $count = 3;
-    $newsH1 = "Новые экспонаты";
-    $textNews = "Сайт рыба текст поможет дизайнеру, верстальщику, веб мастеру генерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений.";
+    $date = date('Y-m-d');
+
+    $event = mysqli_query($connect, "SELECT `name`, `date` FROM `time-work` WHERE `date`>$date");
+    $event = mysqli_fetch_all($event);
+
 ?>
 
 <!DOCTYPE html>
@@ -46,71 +44,75 @@
     </div>
 
     <main>
-        <div id = "index_pn_pt">
-            <div id = "index_pn_pt_text">
-                ПН-ПТ 10:00-18:00 <br>
-                СБ-ВС выходной
+        <div>
+            <div>.</div>
+            <div id = "index_pn_pt">
+                <div id = "index_pn_pt_text">
+                    ПН-ПТ 10:00-18:00 <br>
+                    СБ-ВС выходной
+                </div>
+                <a href="html/time-work.php"><div class = "button" id = "index_pn_pt_button">Купить билет</div></a>
             </div>
-            <a href="html/time-work.php"><div class = "button" id = "index_pn_pt_button">Купить билет</div></a>
-        </div>
-        <!-- Первый блок -->
-        <div class = "index_block_big">
-            <div id = "index_info_1">
-                <div id = "index_text_1">
-                    Ближайшее мероприятие
-                </div>
-                <div id = "index_text_2">
-                    <?= $time_work ?>
-                </div>
-
-                <a href="html/time-work.php">
-                    <div class = "button" id = "index_button_rospis">
-                        Расписание мероприятий
+            <!-- Первый блок -->
+            <div class = "index_block_big">
+                <div id = "index_info_1">
+                    <div id = "index_text_1">
+                        Ближайшее мероприятие
                     </div>
-                </a>
-            </div>
-
-            <div id = "index_photo_1">
-                <img src="img/photo1.png" alt="фото музея 1" class = "index_photo_1_1">
-            </div>
-        </div>
-
-        <!-- Второй блок -->
-        <div class = "index_block_big">
-            <div id = "index_info_2">
-                <div id = "index_text_3">
-                    Местоположение музея
-                </div>
-                <div id = "index_text_4">
-                    г. Барнаул,  ул. Крупская,  103
-                </div>
-
-                <a href="html/aboutUs.html">
-                    <div class = "button" id = "index_button_map">
-                        Посмотреть на карте
+                    <div id = "index_text_2">
+                        <?= $event[0][0] ?> (<?= $event[0][1] ?>)
                     </div>
-                </a>
-            </div>
 
-            <div id = "index_photo_2">
-                <img src="img/photo1.png" alt="фото музея 1" class = "index_photo_1_1">
-            </div>
-        </div>
-        <!-- Новости -->
-        <div id = "index_news_text">Новости</div>
-        <?php
-            for($i = 0; $i < $count; $i++){
-        ?>
-        <a href="html/news.php">
-            <div class = "index_block_news">
-                <img class = "index_photo_news" src="img/<?= $photo ?>.png" alt="Фото новости">
-                <div class = "index_news_h1"><?= $newsH1 ?></div>
-                <div class = "index_news_text_main">
-                    <?= $textNews ?>
+                    <a href="html/time-work.php">
+                        <div class = "button" id = "index_button_rospis">
+                            Расписание мероприятий
+                        </div>
+                    </a>
+                </div>
+
+                <div id = "index_photo_1">
+                    <img src="img/photo1.png" alt="фото музея 1" class = "index_photo_1_1">
                 </div>
             </div>
-        </a>
-        <?php } ?>
+
+            <!-- Второй блок -->
+            <div class = "index_block_big">
+                <div id = "index_info_2">
+                    <div id = "index_text_3">
+                        Местоположение музея
+                    </div>
+                    <div id = "index_text_4">
+                        г. Барнаул,  ул. Крупская,  103
+                    </div>
+
+                    <a href="html/aboutUs.php">
+                        <div class = "button" id = "index_button_map">
+                            Посмотреть на карте
+                        </div>
+                    </a>
+                </div>
+
+                <div id = "index_photo_2">
+                    <img src="img/photo1.png" alt="фото музея 1" class = "index_photo_1_1">
+                </div>
+            </div>
+            <!-- Новости -->
+            <div id = "index_news_text">Новости</div>
+            <?php
+                for($i = 0; $i < count($news); $i++){
+            ?>
+            <a href="html/news.php?id_news=<?= $news[$i][0] ?>">
+                <div class = "index_block_news">
+                    <img class = "index_photo_news" src="img/<?= $news[$i][3] ?>.png" alt="Фото новости">
+                    <div class = "index_news_h1"><?= $news[$i][1] ?> (<?= $news[$i][2] ?>)</div>
+                    <div class = "index_news_text_main">
+                        <?= $news[$i][4] ?>
+                    </div>
+                </div>
+            </a>
+            <?php } ?>
+            <div>.</div>
+        </div>
     </main>
 </body>
 </html>
