@@ -25,6 +25,7 @@
 <body>
     <?php include "header.php"; ?>
     <main>
+        <div class = "point">.</div>
         <div class = "button" id = "time_button_1">Купить билет</div>
         <table id = "time_table">
             <caption>Расписание</caption>
@@ -58,6 +59,8 @@
                 <input type="submit" value="Заказать" class = "button" id = "time_form_button">
             </form>
         <?php } ?>
+        <div class = "point">.</div>
     </main>
+    <?php include "../php/footer.php"; ?>
 </body>
 </html>

@@ -31,6 +31,7 @@
 <body>
     <?php include "header.php"; ?>
     <main>
+        <div class = "point">.</div>
         <div id = "catalog_count_text">Всего <?= count($exhibit) ?> экспонатов</div>
         <?php if($sotrudnik){ ?>
             <a href="createpage.php"><div class = "button" id = "catalog_button">Добавить новый экспонат</div></a>
@@ -48,6 +49,8 @@
                 </a>
             <?php } ?>
         </div>
+        <div class = "point">.</div>
     </main>
+    <?php include "../php/footer.php"; ?>
 </body>
 </html>

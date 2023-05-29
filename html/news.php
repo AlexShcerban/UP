@@ -24,6 +24,7 @@
 <body>
     <?php include "header.php"; ?>
     <main>
+        <div class = "point">.</div>
         <!-- Главная новость -->
         <a href="../index.php"><div class = "button" id = "exhibit_button">Вернуться к новостям</div></a>
         <div id = "exhibit_block">
@@ -45,6 +46,8 @@
                 <?php } ?>
             </div>
         </div>
+        <div class = "point">.</div>
     </main>
+    <?php include "../php/footer.php"; ?>
 </body>
 </html>

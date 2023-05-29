@@ -27,6 +27,7 @@
     <?php include "header.php"; ?>
     <!-- Регистрация -->
     <main>
+        <div class = "point">.</div>
         <?php if($id > 0){ ?>
             <form action="../php/auth.php" method="get">
                 <input type="hidden" name="exit" value = "3">
@@ -64,6 +65,8 @@
                 <input type="submit" value="Уже есть аккаунт" class = "button">
             </form>
         <?php }} ?>
+        <div class = "point">.</div>
     </main>
+    <?php include "../php/footer.php"; ?>
 </body>
 </html>

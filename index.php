@@ -1,13 +1,12 @@
 <?php
 
 // Покупка билета
-// Нормальные фото сделать
 
-// тег main с самого верха и до самого низа ***
-// Выравнивание по вертикали ***
+// Выравнивание по вертикали в кнопках и в индексном файле кнопка события***
 
+// В индексном файле не работает имя вместо слова вход
 // 404
-//Заменить ссылки на кнопки с JS
+//Заменить ссылки на кнопки с JS???
 //Ширина в процентах
 //Заголовки увеличить текст
 
@@ -50,7 +49,7 @@
 
     <main>
         <div>
-            <div>.</div>
+            <div class = "point">.</div>
             <div id = "index_pn_pt">
                 <div id = "index_pn_pt_text">
                     ПН-ПТ 10:00-18:00 <br>
@@ -76,7 +75,7 @@
                 </div>
 
                 <div id = "index_photo_1">
-                    <img src="img/photo1.png" alt="фото музея 1" class = "index_photo_1_1">
+                    <img src="img/1_03.jpg" alt="фото музея 1" class = "index_photo_1_1">
                 </div>
             </div>
 
@@ -98,7 +97,7 @@
                 </div>
 
                 <div id = "index_photo_2">
-                    <img src="img/photo1.png" alt="фото музея 1" class = "index_photo_1_1">
+                    <img src="img/1_02.jpg" alt="фото музея 1" class = "index_photo_1_1">
                 </div>
             </div>
             <!-- Новости -->
@@ -119,8 +118,9 @@
                 </div>
             </a>
             <?php } ?>
-            <div>.</div>
+            <div class = "point">.</div>
         </div>
     </main>
+    <?php include "php/footer.php"; ?>
 </body>
 </html>

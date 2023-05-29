@@ -21,6 +21,7 @@
 <body>
     <?php include "header.php"; ?>
     <main>
+        <div class = "point">.</div>
         <a href="catalog.php"><div class = "button" id = "exhibit_button">Вернуться к каталогу</div></a>
         <div id = "exhibit_block">
             <img src="../img/<?= $exhibit[0][1] ?>" alt="музейный экспонат, <?= $exhibit[0][0] ?>" id = "exhibit_photo">
@@ -31,6 +32,8 @@
             </div><br>
             <div id = "exhibit_text_2"><?= $exhibit[0][2] ?></div>
         </div>
+        <div class = "point">.</div>
     </main>
+    <?php include "../php/footer.php"; ?>
 </body>
 </html>

@@ -17,6 +17,7 @@ require_once '../config/connect.php';
 <?php include "../html/header.php" ?>
 
     <main>
+        <div class = "point">.</div>
         <div id = "create_h1">Создание новой новости</div>
         <!-- Создание данных -->
         <form action="../php/create-new.php" method="post" id = "create_form" enctype = "multipart/form-data">
@@ -34,6 +35,8 @@ require_once '../config/connect.php';
             <br><br>
             <button type = "submit" class = "button create_field" id = "create_button">Готово</button>
         </form>
+        <div class = "point">.</div>
     </main>
+    <?php include "../php/footer.php"; ?>
 </body>
 </html>

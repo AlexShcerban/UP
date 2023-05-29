@@ -24,6 +24,11 @@ main{
     background: #000000;
     height: auto;
 }
+.point{
+    color: #000000;
+    pointer-events: none;
+    user-select: none;
+}
 .button{
     width: 218px;
     height: 37px;
@@ -37,6 +42,18 @@ main{
     width: 100%;
     height: 63px;
     margin-top: -4px;
+}
+#footer{
+    background-color: #141313;
+    height: 400px;
+}
+#footer_table{
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+    text-align: center;
+    margin-top: 100px;
+    width: 50%;
+    line-height: 30px;
 }
 .header_button{
     margin-top: 25px;
@@ -197,6 +214,7 @@ main{
     background-color: #f7eded;
     border-color: aliceblue;
     border: 20px;
+    margin-bottom: 50px;
 }
 #time_table td{
     background-color: #2D2A2A;
